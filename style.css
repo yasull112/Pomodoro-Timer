@@ -1,0 +1,114 @@
+:root {
+  
+  --timer-color: #2e7d32; /* Dark Green */
+  --text-color: #045e12;
+  --text-soft: #d0d0d0;
+  --bg-start: #388e3c; /* Green */
+  --bg-end: #43a047;   /* Slightly lighter Green */
+  --button-hover: #1b5e20; /* Darker Green */
+  --link-color: #81c784; /* Light Green */
+  --timer-color: #045e12}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-image: url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+button {
+  padding: 16px 32px;
+  font-size: 1em;
+  background-color: rgb(4, 94, 18, 0.1);
+  border: 2px solid var(--timer-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  backdrop-filter: blur(6px);
+}
+button :hover {
+  background-color: var(--button-hover);
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.turns {
+  background-color: #3d3846;
+  font-size: 1.5em;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: var(--text-soft);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-container {
+  position: relative;
+  margin: 20px;
+}
+
+.timer {
+
+
+  font-size: 2.8em;
+  color: var(--timer-color);
+}
+
+.icon-cog {
+  position: center;
+  font-size: 2em;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+  color: var(--text-soft);
+}
+
+.icon-cog:hover{
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#drop-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}

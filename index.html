@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PomoStudy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+  <div class="turns animate-slide-in-down">1/4</div>
+  <div class="timer">00:00</div>
+  <span class="icon-cog" id="toggle-config">⚙️</span>
+  <div id="drop-content">
+    <div class="select-options">
+    <label for="work-time-options">Time:</label>
+    <select id="work-time-options" name="work-options" onchange="reset()">
+      <option value="25" selected>25min</option>
+      <option value="35">35min</option>
+      <option value="45">45min</option>
+      <option value="55">55min</option>
+    </select>
+    <label for="total-turns-options">Turns:</label>
+    <select id="total-turns-options" name="qtde-turns" onchange="reset ()">
+       <option value="2">2</options>
+       <option value="3">3</options>
+       <option value="4" selected>4</options>
+       <option value="5">5</options>
+      </select>
+  </div>
+</div>
+
+<div class="time-mode animate=zoom-in">WORK</div>
+<div>
+    <button class="timer-control animate-slide-in-down">Start</button>
+    <button class="reset-button animate-slide-in-down">Restart</button>
+	</div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
